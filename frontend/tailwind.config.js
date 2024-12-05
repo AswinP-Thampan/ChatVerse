@@ -11,6 +11,12 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        gR: ['Glimer-Regular', 'sans-serif'],
+        // gM: ['Glimer-Medium', 'sans-serif'],
+        // gH: ['Glimer-Heavy', 'sans-serif'],
+        // gB: ['Glimer-Bold', 'sans-serif'],
+      },
     },
   },
   plugins: [],

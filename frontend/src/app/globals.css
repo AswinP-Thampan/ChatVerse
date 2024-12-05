@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #090909;
+    --foreground: #ffffff;
   }
 }
 
@@ -19,3 +19,9 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@font-face {
+  font-family: 'Glimer-Regular'; /* Name of the font */
+  src: url('/fonts/Glimer-trial.ttf') format('truetype');
+}
+
