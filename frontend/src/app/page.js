@@ -158,7 +158,7 @@ const ChatApp = () => {
                          [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-neutral-500'>
               <div className=''>
                 {messages.map((msg, index) => (
-                  <div>
+                  <div key={index}>
                     {msg.name === name &&
                       <div className='mb-3 relative flex flex-col items-end'>
                         <div key={index} className='bg-blue-500 py-1 rounded-lg mb-1 min-w-32 text-end px-2 '>
