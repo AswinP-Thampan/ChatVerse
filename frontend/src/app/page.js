@@ -4,7 +4,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import io from 'socket.io-client';
 
-const socket = io('http://localhost:5000');
+const socket = io("https://chatverse-6m0n.onrender.com/socket.io/");
+  
 
 const ChatApp = () => {
   const [messages, setMessages] = useState([]);
@@ -14,7 +15,7 @@ const ChatApp = () => {
 
   // Fetch messages on initial load
   useEffect(() => {
-    axios.get('http://localhost:5000/messages').then((response) => {
+    axios.get('https://chatverse-6m0n.onrender.com/messages').then((response) => {
       setMessages(response.data);
     });
 
@@ -30,7 +31,7 @@ const ChatApp = () => {
   // Submit a new message
   const handleSend = () => {
     if (name && text) {
-      axios.post('http://localhost:5000/messages', { name, text });
+      axios.post('https://chatverse-6m0n.onrender.com/messages', { name, text });
       setText(''); // Clear input after sending
     }
   };
