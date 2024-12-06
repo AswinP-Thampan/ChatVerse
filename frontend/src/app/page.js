@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import io from 'socket.io-client';
 
-const socket = io("https://chatverse-6m0n.onrender.com/socket.io/");
+const socket = io("https://chatverse-6m0n.onrender.com/");
   
 
 const ChatApp = () => {
