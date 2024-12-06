@@ -3,19 +3,24 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const { Server } = require('socket.io'); // Import Socket.IO
 const http = require('http'); // Required to attach Socket.IO to server
-
 const app = express();
+const dotenv = require('dotenv');
+dotenv.config();
 const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, { cors: { origin: '*' } }); // Attach Socket.IO
+const uri = process.env.MONGO_URI;
 
 app.use(cors());
 app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/chat-logger', {
+
+
+mongoose.connect(uri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
-});
+})
+  .then(() => console.log('MongoDB Connected!'))
+  .catch((err) => console.error('Connection failed:', err));
 
 // Schema and Model
 const messageSchema = new mongoose.Schema({
