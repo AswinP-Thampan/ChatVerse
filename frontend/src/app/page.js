@@ -39,8 +39,8 @@ const ChatApp = () => {
     <div className='m-5'>
       {!connected && (
         <div className='w-[90vw] h-[90vh] overflow-hidden flex flex-col justify-center items-center'>
-          <div className='flex items-end text-[100px] font-gR'>CHAT VERSE</div>
-          <div className='w-[400px]'>
+          <div className='flex items-end text-[80px] sm:text-[120px] font-gR'>CHAT VERSE</div>
+          <div className='w-full max-w-[400px]'>
 
             <div className='flex justify-center mb-2 text-xl font-gR'>Guest Login</div>
             <div className='flex gap-2 w-full'>
@@ -68,93 +68,95 @@ const ChatApp = () => {
         </div>
       )}
       {connected && (
-        <div className='grid grid-cols-2 justify-between'>
+        <div className='grid grid-cols-1 sm:grid-cols-2 justify-between'>
           <div className='flex flex-col justify-end items-start font-gR'>
-            <div className='text-gray-900'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-800'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-700'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-600'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-500'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-400'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-300'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-200'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-100'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-            </div>
-            <div className='text-gray-50'>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
-              <span className='mr-5'>CHAT VERSE</span>
+            <div className='hidden sm:block'>
+              <div className='text-gray-900'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-800'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-700'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-600'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-500'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-400'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-300'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-200'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-100'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
+              <div className='text-gray-50'>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+                <span className='mr-5'>CHAT VERSE</span>
+              </div>
             </div>
 
-            <div className="text-[120px]">CHAT VERSE</div>
+            <div className="text-[80px] sm:text-[120px]">CHAT VERSE</div>
           </div>
-          <div className='h-[90vh]'>
-            <div className='m-10 mb-1 p-5 h-[80vh] rounded-lg max-w-sm overflow-y-scroll bg-[#101010] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full 
+          <div className='h-[70vh] sm:h-[90vh]'>
+            <div className='m-10 mb-1 p-5 h-[70vh] sm:h-[90vh] rounded-lg max-w-sm overflow-y-scroll bg-[#101010] [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full 
                          [&::-webkit-scrollbar-track]:bg-neutral-700 [&::-webkit-scrollbar-thumb]:bg-neutral-500'>
               <div className=''>
                 {messages.map((msg, index) => (
