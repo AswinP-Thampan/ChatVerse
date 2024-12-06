@@ -10,15 +10,7 @@ const server = http.createServer(app); // Create HTTP server
 const io = new Server(server, { cors: { origin: '*' } }); // Attach Socket.IO
 const uri = process.env.MONGO_URI;
 
-
-// Allow your frontend domain
-const corsOptions = {
-  origin: 'https://chat-verse-live.vercel.app/',  // Update this to match your frontend domain
-  methods: ['GET', 'POST'],
-  allowedHeaders: ['Content-Type']
-};
-
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(express.json());
 
 mongoose.connect(uri, {
