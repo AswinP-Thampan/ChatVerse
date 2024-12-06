@@ -35,6 +35,7 @@ const Message = mongoose.model('Message', messageSchema);
 app.get('/messages', async (req, res) => {
   const messages = await Message.find().sort({ timestamp: 1 });
   res.json(messages);
+  console.log("messgaes is accessed")
 });
 
 // REST API to post a new message
